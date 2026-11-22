@@ -61,7 +61,7 @@ Get-ChildItem C:\mycode\project\subfolder *.ps1 | ForEach { (Get-Content $_ | Fo
 ```
 
 #### Test port connection
-
+On boxes where Test-NetConnection isn't available, Test-Port.ps1 may work. 
 ```powershell
 Test-NetConnection -ComputerName 192.168.1.1 -Port 3033
 ```
