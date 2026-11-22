@@ -26,7 +26,7 @@ FROM information_schema.TABLES GROUP BY table_schema;
 ```
 
 #### Create Wordpress admin account
-Useful when access is needed to WP admin panels but you only have access to 
+Useful when access is needed to WP admin panels but you only have access to SSH and SQL.
 
 ```SQL
 INSERT INTO `<WPDBNAMEHERE>`.`wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_status`, `display_name`)
