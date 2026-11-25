@@ -60,7 +60,7 @@ Get-View -Viewtype VirtualMachine -Property Name, Config.Hardware.Device | % `
 
 #### VMFS5 iSCSI unmap 
 Manually unmap storage on an old VMFS5 datastore:
-`esxcli storage vmfs unmap --volume-label=MCS_P5_VV_16785_DATA_02`
+`esxcli storage vmfs unmap --volume-label=DATASTORE_NAME`
 
 #### Find snapshots and how much space they're using
 ```powershell
